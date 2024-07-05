@@ -1,5 +1,9 @@
 {
 	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
 		"target": "ES2020",
 		"useDefineForClassFields": true,
 		"lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -19,11 +23,8 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./src/*"]
-		}
+		"types": ["vitest/globals"]
 	},
-	"include": ["src", "src/@"],
+	"include": ["src", "vite.config.ts"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

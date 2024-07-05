@@ -20,16 +20,16 @@ import {
 
 const genres = [
 	{
-		value: 'Ciencia ficción',
-		label: 'Ciencia ficción'
-	},
-	{
 		value: 'zombies',
 		label: 'Zombies'
 	},
 	{
 		value: 'fantasía',
 		label: 'Fantasía'
+	},
+	{
+		value: 'ciencia ficción',
+		label: 'Ciencia ficción'
 	},
 	{
 		value: 'terror',
@@ -57,8 +57,8 @@ export function Combobox({
 				>
 					{value
 						? genres.find(genre => genre.value === value)?.label
-						: 'Select genre...'}
-					<ChevronsUpDown className='w-4 h-4 ml-2 opacity-50 shrink-0' />
+						: 'Buscar género...'}
+					<ChevronsUpDown className='w-8 h-4 ml-2 opacity-50 shrink-0' />
 				</Button>
 			</PopoverTrigger>
 			<PopoverContent className='w-[200px] p-0'>
@@ -76,7 +76,7 @@ export function Combobox({
 							>
 								<Check
 									className={cn(
-										'mr-2 h-4 w-4',
+										'mr-2 h-4 w-8',
 										value === genre.value ? 'opacity-100' : 'opacity-0'
 									)}
 								/>

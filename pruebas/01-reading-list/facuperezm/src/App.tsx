@@ -93,7 +93,7 @@ function App() {
 				<h1 className='py-4 text-4xl font-extrabold tracking-tight scroll-m-20 lg:text-5xl'>
 					{unselectedBooks.length} libros disponibles
 				</h1>
-				<h2 className='pb-2 text-3xl font-semibold tracking-tight transition-colors border-b scroll-m-20 first:mt-0'>
+				<h2 className='pb-2 text-3xl font-semibold tracking-tight transition-colors scroll-m-20 first:mt-0'>
 					{selectedBooks.length} libros seleccionados
 				</h2>
 
